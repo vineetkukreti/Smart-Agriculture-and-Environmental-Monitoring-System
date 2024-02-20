@@ -45,7 +45,7 @@ This project implements a comprehensive smart agriculture and environmental moni
 1. **Clone the repository:**
 
     ```bash
-    git clone [Link to your GitHub repository]
+    git clone [https://github.com/vineetkukreti/Smart-Agriculture-and-Environmental-Monitoring-System]
     ```
    Use code with caution.
 
