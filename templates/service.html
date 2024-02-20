@@ -1,0 +1,149 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+
+
+<!-- Navbar Start -->
+{% include 'navbar.html' %}
+<!-- Navbar End -->
+
+<!-- Hero Start -->
+<div class="container-fluid bg-primary py-5 bg-hero mb-5">
+    <div class="container py-5">
+        <div class="row justify-content-start">
+            <div class="col-lg-8 text-center text-lg-start">
+                <h1 class="display-1 text-white mb-md-4">Our Services</h1>
+                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Home</a>
+                <a href="" class="btn btn-secondary py-md-3 px-md-5">Services</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+
+
+<!-- Services Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="mb-3">
+                    <h6 class="text-primary text-uppercase">Services</h6>
+                    <h1 class="display-5">Organic Farm Services</h1>
+                </div>
+                <p class="mb-4">Feel free to reach out to us with any questions or if you're interested in trying out
+                    our product. We're here to help you optimize your farming experience and achieve outstanding
+                    results!</p>
+                <a href="" class="btn btn-primary py-md-3 px-md-5">Contact Us</a>
+            </div>
+
+
+    
+
+
+
+            <div class="col-lg-4 col-md-6">
+                <a href="{{ url_for('predict_fish') }}" class="text-decoration-none">
+                    <div class="service-item bg-light text-center p-5">
+                        <i class="fa fa-apple-alt display-1 text-primary mb-3 fa-spin fa-3x "></i>
+                        
+                        <h4>Fish Recommender</h4>
+                        <p class="mb-0">Fish Recommender suggests ideal fish species for farming based on pH, turbidity,
+                            and temperature levels, optimizing production and ensuring environmental compatibility</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <a href="{{ url_for('p') }}" class="text-decoration-none">
+                    <div class="service-item bg-light text-center p-5">
+                        <i class="fa fa-apple-alt display-1 text-primary mb-3"></i>
+                        <h4>Crop Predictor</h4>
+                        <p class="mb-0">Soil-based Crop Predictor optimizes yields by recommending ideal crops based on soil nutrients, fostering sustainable farming</p>
+                    </div>
+                </a>
+            </div>
+
+
+
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light text-center p-5" onclick="window.location.href='http://127.0.0.1:5000/cattle';" style="cursor: pointer;">
+                    <i class="fa fa-dog display-1 text-primary mb-3"></i>
+                    <h4>Cattle Monitoring</h4>
+                    <p class="mb-0">Cattle Monitoring system uses image recognition to track and manage livestock like sheep and cows, streamlining operations for better animal welfare</p>
+                </div>
+            </div>
+            
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light text-center p-5" onclick="window.location.href='http://127.0.0.1:5000/cattle';" style="cursor: pointer;">
+                    <i class="fa fa-fire display-1 text-primary mb-3"></i>
+                    <h4>Fire Detection for Farm</h4>
+                    <p class="mb-0">Farm Fire Detection uses models to spot fire and smoke early, prioritizing prevention over cure for agricultural safety.</p>
+                </div>
+            </div>
+            
+            
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light text-center p-5" onclick="window.location.href='http://127.0.0.1:5000/cattle';" style="cursor: pointer;">
+                    <i class="fa fa-seedling display-1 text-primary mb-3"></i>
+                    <h4>Pest management</h4>
+                    <p class="mb-0">Pest Control identifies and diagnoses harmful pests and insects affecting plants, offering tailored remedies to mitigate damage and ensure crop health</p>
+                </div>
+            </div>
+            
+
+        </div>
+
+    </div>
+</div>
+<!-- Services End -->
+
+
+
+
+<!-- Testimonial Start -->
+<div class="container-fluid bg-testimonial py-5 mt-5" style="margin-bottom: 135px;">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="owl-carousel testimonial-carousel p-5">
+                    <div class="testimonial-item text-center text-white">
+                        <img class="img-fluid mx-auto p-2 border border-5 border-secondary rounded-circle mb-4"
+                            src="img/testimonial-1.jpg" alt="">
+                        <p class="fs-5">Our farm productivity increased significantly after implementing the pest
+                            control solution provided by this company. It effectively identified and treated harmful
+                            pests, ensuring healthier crops and better yields.</p>
+                        <hr class="mx-auto w-25">
+                        <h4 class="text-white mb-0">Ramesh Sharma</h4>
+                    </div>
+                    <div class="testimonial-item text-center text-white">
+                        <img class="img-fluid mx-auto p-2 border border-5 border-secondary rounded-circle mb-4"
+                            src="img/testimonial-2.jpg" alt="">
+                        <p class="fs-5">We've been using their pest control services for years, and the results speak
+                            for themselves. Our plants are thriving, thanks to their expertise in identifying and
+                            managing pests effectively.</p>
+                        <hr class="mx-auto w-25">
+                        <h4 class="text-white mb-0">Gajendra Bhandari</h4>
+                    </div>
+                    <div class="testimonial-item text-center text-white">
+                        <img class="img-fluid mx-auto p-2 border border-5 border-secondary rounded-circle mb-4"
+                            src="img/testimonial-3.jpg" alt="">
+                        <p class="fs-5">As a farmer, I rely on efficient pest control solutions to protect my crops.
+                            This company not only identifies pests accurately but also provides tailored remedies,
+                            ensuring the health and productivity of my farm.</p>
+                        <hr class="mx-auto w-25">
+                        <h4 class="text-white mb-0">Arijit Singh</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+
+{% endblock %}

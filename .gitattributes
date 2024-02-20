@@ -1,0 +1,2 @@
+path/to/traced_model.pt filter=lfs diff=lfs merge=lfs -text
+traced_model.pt filter=lfs diff=lfs merge=lfs -text
